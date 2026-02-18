@@ -40,11 +40,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Serviços</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Containers</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Banheiros e Lavabos</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Betoneiras</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Andaimes</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Ferramentas</a></li>
+              <li><a href="/categorias/containers" className="hover:text-primary-400 transition-colors">Containers</a></li>
+              <li><a href="/categorias/banheiros-e-lavabos" className="hover:text-primary-400 transition-colors">Banheiros e Lavabos</a></li>
+              <li><a href="/categorias/betoneiras" className="hover:text-primary-400 transition-colors">Betoneiras</a></li>
+              <li><a href="/categorias/andaimes" className="hover:text-primary-400 transition-colors">Andaimes</a></li>
+              <li><a href="/categorias/ferramentas" className="hover:text-primary-400 transition-colors">Ferramentas</a></li>
             </ul>
           </div>
 
@@ -53,9 +53,9 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li><a href="/#about" className="hover:text-primary-400 transition-colors">Sobre Nós</a></li>
               <li><a href="/#branches" className="hover:text-primary-400 transition-colors">Nossas Filiais</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Trabalhe Conosco</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Política de Privacidade</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Termos de Uso</a></li>
+              <li><a href="/trabalhe-conosco" className="hover:text-primary-400 transition-colors">Trabalhe Conosco</a></li>
+              <li><a href="/politica-de-privacidade" className="hover:text-primary-400 transition-colors">Política de Privacidade</a></li>
+              <li><a href="/termos-de-uso" className="hover:text-primary-400 transition-colors">Termos de Uso</a></li>
             </ul>
           </div>
 
