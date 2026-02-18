@@ -7,6 +7,9 @@ import QuoteRequestPage from './pages/QuoteRequestPage';
 import TalkToUsPage from './pages/TalkToUsPage';
 import CategoryEquipmentsPage from './pages/CategoryEquipmentsPage';
 import ContactBranchesPage from './pages/ContactBranchesPage';
+import WorkWithUsPage from './pages/WorkWithUsPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfUsePage from './pages/TermsOfUsePage';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         <Route path="/orcamento" element={<QuoteRequestPage />} />
         <Route path="/fale-conosco" element={<TalkToUsPage />} />
         <Route path="/contato" element={<ContactBranchesPage />} />
+        <Route path="/trabalhe-conosco" element={<WorkWithUsPage />} />
+        <Route path="/politica-de-privacidade" element={<PrivacyPolicyPage />} />
+        <Route path="/termos-de-uso" element={<TermsOfUsePage />} />
       </Routes>
       <Footer />
     </div>
