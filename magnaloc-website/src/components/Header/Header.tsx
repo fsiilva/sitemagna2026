@@ -1,6 +1,6 @@
 ﻿import { useState, useEffect } from 'react';
 
-const LOGO_URL = 'https://www.magnaloc.com.br/images/LGML.png';
+import logoUrl from '../../assets/imagens/LGML.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,13 +38,17 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg py-3' : 'bg-white/95 backdrop-blur-sm py-4'
+        isScrolled ? 'bg-white shadow-lg py-2' : 'bg-white/95 backdrop-blur-sm py-2.5'
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <a href="/#home" className="flex items-center" aria-label="Magna Locações - Início">
-            <img src={LOGO_URL} alt="Logo Magna Locações" className="h-12 md:h-16 w-auto" />
+            <img
+              src={logoUrl}
+              alt="Logo Magna Locações"
+              className="h-16 sm:h-18 md:h-24 lg:h-28 w-auto object-contain -my-3 translate-y-0.5"
+            />
           </a>
 
           <nav className="hidden lg:flex items-center space-x-6">

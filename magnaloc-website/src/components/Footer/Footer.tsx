@@ -1,4 +1,4 @@
-﻿const LOGO_URL = 'https://www.magnaloc.com.br/images/LGML.png';
+﻿import logoUrl from '../../assets/imagens/LGML.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +9,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <a href="/#home" className="inline-flex mb-4" aria-label="Magna Locações - Início">
-              <img src={LOGO_URL} alt="Logo Magna Locações" className="h-12 md:h-14 w-auto brightness-0 invert" />
+              <img
+                src={logoUrl}
+                alt="Logo Magna Locações"
+                className="h-10 sm:h-12 md:h-14 w-auto object-contain brightness-0 invert"
+              />
             </a>
             <p className="text-gray-400 mb-4">
               Locação de equipamentos para construção civil e indústria há quase 40 anos.
@@ -88,7 +92,7 @@ const Footer = () => {
             <div className="flex items-center space-x-4 text-sm text-gray-400">
               <span>Desenvolvido com</span>
               <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                <path fillRule="evenodd" d="M3.172 5.172a4.4 4.4 0 015.656 0L10 6.343l1.172-1.171a4.4 4.4 0 115.656 5.656L10 17.657l-6.828-6.829a4.4 4.4 0 010-5.656z" clipRule="evenodd" />
               </svg>
             </div>
           </div>
@@ -99,6 +103,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
